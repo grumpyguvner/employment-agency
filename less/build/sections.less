@@ -1,0 +1,226 @@
+
+.navbar + #index .section-head-inner {
+    padding-top: 90px;
+    @media (min-width: @screen-md-min) {
+        padding-top: 160px;
+    }
+}
+section {
+    background: #fff;
+}
+.section-head {
+    position: relative;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 50% -100px;
+    .section-head-inner {
+        background: #4D4D4D;
+        background: rgba(77, 77, 77, .6);
+        .container {
+            font-weight: 700;
+            min-height: 180px;
+            line-height: 180px;
+            text-align: center;
+            .h1 {
+                vertical-align: middle;
+                display: inline-block;
+                font-size: 28px;
+                line-height: 1em;
+                text-transform: uppercase;
+                color: #fff;
+                text-align: center;
+                margin: 0 auto;
+                width: 80%;
+                font-weight: 700;
+            }
+        }
+
+
+        @media (min-width: @screen-sm-min) {
+            .container {
+
+                min-height: 270px;
+                line-height: 270px;
+                .h1 {
+
+                    font-size: 43px;
+                }
+            }
+        }
+        @media (min-width: @screen-md-min)
+            {
+            .container {
+
+                min-height: 300px;
+                line-height: 300px;
+                .h1 {
+
+                    font-size: 64px;
+                }
+            }
+        }
+    }
+    @media(max-width:400px) {
+
+        background-position: 50% 50% !important;
+    }
+}
+.section-footer {
+    background: @brand-color1;
+    color: #fff;
+    &.overlap .container {
+        position: relative;
+        margin-top: -85px;
+    }
+    h1, .h1, h2, .h2, h3, .h3 {
+        color: #fff;
+    } 
+}
+.section-content {
+    background: #fff;
+    margin: 45px 0 23px;
+    
+        h1, h2, h3, h4, h5, h6,
+        .h1, .h2, .h3, .h4, .h5, .h6 {
+            
+            margin-top: 0;
+            line-height: @line-height-base;;
+        }
+        h2, h3, h4, h5, h6,
+        .h2, .h3, .h4, .h5, .h6 {
+            text-transform: none;
+            margin-bottom: 0;
+            
+            &+ul, +ol {
+                margin-top: 0;
+                
+            }
+        }
+        ul, ol {
+            margin-top: -@line-height-computed;
+            padding-left: 1em;
+            
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+        @media (min-width: @screen-sm-min) {
+            margin-bottom: 36px;
+        }
+        @media (min-width: @screen-md-min)
+        {
+            margin-top: 70px;
+        }
+}
+#index {
+    .section-head { 
+        background-image: url("../img/title_backgrounds/point.jpg");
+        background-position: center bottom;
+    }
+    .section-head-inner {
+        background: @brand-primary;
+        background: rgba(0, 151, 219, .45);
+        .container {
+            min-height: 326px;
+            line-height: 1.1em;
+            text-align: right;
+            font-size: 8px;
+            font-weight: 700;
+            color: #fff;
+            padding-top: 15px;
+            .h1 {
+                overflow: visible;
+                display: inline-block;
+                font-size: 28px;
+                line-height: 1em;
+                text-transform: uppercase;
+                color: #fff;
+                text-align: right;
+                margin: 0 auto;
+                width: 135px;
+            }
+        }
+
+        @media (min-width: @screen-sm-min) {
+            .container {
+                padding-top: 30px;
+
+                min-height: 385px;
+                font-size: 12px;
+                .h1 {
+
+                    font-size: 45px;
+                    width: 200px;
+                }
+            }
+        }
+        @media (min-width: @screen-md-min)
+            {
+            .container {
+                padding-top: 50px;
+
+                min-height: 550px;
+                font-size: 17px;
+                .h1 {
+
+                    font-size: 64px;
+                    width: 290px;
+                }
+            }
+        }
+    }
+    .section-footer {
+        text-align: center;
+
+        .col-sm-4 {
+            .img-centered {
+                margin-bottom: 36px;
+            }
+            h2 {
+                margin-bottom: 28px;
+
+            }
+            margin-bottom: 45px;
+        }
+        padding-bottom: 23px;
+
+        @media (min-width: @screen-sm-min) {
+
+        .col-sm-4 {
+            margin-bottom: 50px;
+        }
+
+        padding-bottom: 0;
+        }
+        @media (min-width: @screen-md-min) {
+        }
+    }
+}
+#about {
+    .section-head {
+        background-image: url("../img/title_backgrounds/handshake.jpg");
+    }
+    
+    .section-content {
+        .lead {
+            color: @brand-color1;
+        }
+        h1, h2, h3, h4, h5, h6,
+        .h1, .h2, .h3, .h4, .h5, .h6 {
+            
+            color: @brand-color1;
+        }
+    }
+    .section-footer {
+        background: @brand-color1;
+    }
+}
+
+#get-in-touch-map .google-maps {
+    height: 350px;
+    width: 100%;
+}
