@@ -636,7 +636,7 @@ section {
   background: #0099d4;
 }
 #jobseekers .section-head {
-  background-image: url("../img/title_backgrounds/handshake.jpg");
+  background-image: url("../img/title_backgrounds/Jobseekers-banner.jpg");
 }
 #jobseekers .section-content .lead {
   color: #00a0ba;
@@ -659,7 +659,7 @@ section {
   background: #00a0ba;
 }
 #employers .section-head {
-  background-image: url("../img/title_backgrounds/handshake.jpg");
+  background-image: url("../img/title_backgrounds/employers-banner.jpg");
 }
 #employers .section-content .lead {
   color: #00a79b;
@@ -682,7 +682,7 @@ section {
   background: #00a79b;
 }
 #jobsearch .section-head {
-  background-image: url("../img/title_backgrounds/handshake.jpg");
+  background-image: url("../img/title_backgrounds/jobsearch-banner.jpg");
 }
 #jobsearch .section-content .lead {
   color: #3cac83;
@@ -705,7 +705,7 @@ section {
   background: #3cac83;
 }
 #contact .section-head {
-  background-image: url("../img/title_backgrounds/handshake.jpg");
+  background-image: url("../img/title_backgrounds/contact-banner.jpg");
 }
 #contact .section-content {
   margin-bottom: 110px;
@@ -734,7 +734,7 @@ section {
   text-align: center;
 }
 #footer .section-head {
-  background-image: url("../img/title_backgrounds/handshake.jpg");
+  background-image: url("../img/title_backgrounds/footer-banner.jpg");
 }
 #footer .section-content .lead {
   color: #86bc25;
