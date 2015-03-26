@@ -38,8 +38,11 @@ $('.navbar-collapse ul li a').click(function () {
 
 skrollr.init({
     forceHeight: false,
-    smoothScrolling: false,
-    mobileDeceleration: 0.004
+    smoothScrolling: true,
+    mobileCheck: function() {
+                //hack - forces mobile version to be off
+                return false;
+            }
 });
 
 function map_init() {
