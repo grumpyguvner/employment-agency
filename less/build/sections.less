@@ -6,6 +6,7 @@
 }
 section {
     background: #fff;
+    overflow: hidden;
 }
 .section-head {
     position: relative;
@@ -27,8 +28,6 @@ section {
             h1, .h1 {
                 vertical-align: middle;
                 display: inline-block;
-                font-size: 28px;
-                line-height: 1em;
                 text-transform: uppercase;
                 color: #fff;
                 text-align: center;
@@ -43,22 +42,14 @@ section {
 
                 min-height: 270px;
                 line-height: 270px;
-                .h1 {
-
-                    font-size: 43px;
-                }
             }
         }
         @media (min-width: @screen-md-min)
             {
             .container {
 
-                min-height: 300px;
-                line-height: 300px;
-                .h1 {
-
-                    font-size: 64px;
-                }
+                min-height: 445px;
+                line-height: 445px;
             }
         }
     }
@@ -74,10 +65,10 @@ section {
     &.overlap
     {
         padding-top: 0;
-    .container {
-        position: relative;
-        margin-top: -85px;
-    }
+        .row {
+            position: relative;
+            margin-top: -85px;
+        }
     }
     h1, h2, h3, h4, h5, h6,
         .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -110,6 +101,7 @@ section {
     h1, .h1 {
         margin-top: 0;
         text-align: right;
+        font-size: 43px;
         line-height: 1em;
         margin-bottom: 38px;
     }
@@ -130,18 +122,6 @@ section {
             {
 
     padding: 70px 0 60px;
-                .h1 {
-
-                    font-size: 53px;
-                }
-        }
-    @media (min-width: @screen-lg-min)
-            {
-
-                .h1 {
-
-                    font-size: 64px;
-                }
         }
 }
 .section-content {
@@ -200,8 +180,6 @@ section {
             .h1 {
                 overflow: visible;
                 display: inline-block;
-                font-size: 28px;
-                line-height: 1em;
                 text-transform: uppercase;
                 color: #fff;
                 text-align: right;
@@ -218,7 +196,6 @@ section {
                 font-size: 12px;
                 .h1 {
 
-                    font-size: 45px;
                     width: 200px;
                 }
             }
@@ -232,7 +209,6 @@ section {
                 font-size: 17px;
                 .h1 {
 
-                    font-size: 64px;
                     width: 290px;
                 }
             }
@@ -380,6 +356,7 @@ section {
     }
     
     .section-content {
+        
         .lead {
             color: @brand-color7;
         }
@@ -389,11 +366,21 @@ section {
             color: @brand-color7;
         }
         .list-inline {
-            margin-bottom: 26px
+            margin-bottom: 0;
         }
+                margin: 23px 0;
+            @media (min-width: @screen-sm-min)
+            {
+                margin: 33px 0;
+            }
+            @media (min-width: @screen-md-min)
+            {
+                margin: 63px 0;
+            }
     }
     .section-footer {
         background: @brand-color7;
+        font-size: 14px;
         
         padding: 40px 0 40px;
         .terms {
