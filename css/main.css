@@ -7,8 +7,11 @@ html {
 }
 body {
   background: #86bc25;
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
+}
+.container {
+  overflow: hidden;
 }
 a,
 a:hover,
