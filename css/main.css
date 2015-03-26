@@ -358,6 +358,10 @@ section {
 .section-footer {
   background: #0097db;
   color: #fff;
+  padding: 60px 0 50px;
+}
+.section-footer.overlap {
+  padding-top: 0;
 }
 .section-footer.overlap .container {
   position: relative;
@@ -370,6 +374,33 @@ section {
 .section-footer h3,
 .section-footer .h3 {
   color: #fff;
+}
+.section-footer h1,
+.section-footer .h1 {
+  margin-top: 0;
+  text-align: right;
+  line-height: 1em;
+  margin-bottom: 38px;
+}
+.section-footer .pull-left {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.section-footer abbr {
+  border-color: #fff;
+}
+@media (min-width: 992px) {
+  .section-footer {
+    padding: 70px 0 60px;
+  }
+  .section-footer .h1 {
+    font-size: 53px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-footer .h1 {
+    font-size: 64px;
+  }
 }
 .section-content {
   background: #fff;
@@ -496,6 +527,7 @@ section {
 }
 #index .section-footer {
   text-align: center;
+  paddin-top: 0;
   padding-bottom: 23px;
 }
 #index .section-footer .col-sm-4 {
@@ -538,9 +570,125 @@ section {
 #about .section-footer {
   background: #0097db;
 }
+#jobseekers .section-head {
+  background-image: url("../img/title_backgrounds/handshake.jpg");
+}
+#jobseekers .section-content .lead {
+  color: #0097db;
+}
+#jobseekers .section-content h1,
+#jobseekers .section-content h2,
+#jobseekers .section-content h3,
+#jobseekers .section-content h4,
+#jobseekers .section-content h5,
+#jobseekers .section-content h6,
+#jobseekers .section-content .h1,
+#jobseekers .section-content .h2,
+#jobseekers .section-content .h3,
+#jobseekers .section-content .h4,
+#jobseekers .section-content .h5,
+#jobseekers .section-content .h6 {
+  color: #0097db;
+}
+#jobseekers .section-footer {
+  background: #0097db;
+}
+#employers .section-head {
+  background-image: url("../img/title_backgrounds/handshake.jpg");
+}
+#employers .section-content .lead {
+  color: #0097db;
+}
+#employers .section-content h1,
+#employers .section-content h2,
+#employers .section-content h3,
+#employers .section-content h4,
+#employers .section-content h5,
+#employers .section-content h6,
+#employers .section-content .h1,
+#employers .section-content .h2,
+#employers .section-content .h3,
+#employers .section-content .h4,
+#employers .section-content .h5,
+#employers .section-content .h6 {
+  color: #0097db;
+}
+#employers .section-footer {
+  background: #0097db;
+}
+#jobsearch .section-head {
+  background-image: url("../img/title_backgrounds/handshake.jpg");
+}
+#jobsearch .section-content .lead {
+  color: #0097db;
+}
+#jobsearch .section-content h1,
+#jobsearch .section-content h2,
+#jobsearch .section-content h3,
+#jobsearch .section-content h4,
+#jobsearch .section-content h5,
+#jobsearch .section-content h6,
+#jobsearch .section-content .h1,
+#jobsearch .section-content .h2,
+#jobsearch .section-content .h3,
+#jobsearch .section-content .h4,
+#jobsearch .section-content .h5,
+#jobsearch .section-content .h6 {
+  color: #0097db;
+}
+#jobsearch .section-footer {
+  background: #0097db;
+}
+#contact .section-head {
+  background-image: url("../img/title_backgrounds/handshake.jpg");
+}
+#contact .section-content .lead {
+  color: #0097db;
+}
+#contact .section-content h1,
+#contact .section-content h2,
+#contact .section-content h3,
+#contact .section-content h4,
+#contact .section-content h5,
+#contact .section-content h6,
+#contact .section-content .h1,
+#contact .section-content .h2,
+#contact .section-content .h3,
+#contact .section-content .h4,
+#contact .section-content .h5,
+#contact .section-content .h6 {
+  color: #0097db;
+}
+#contact .section-footer {
+  background: #0097db;
+}
+#footer .section-head {
+  background-image: url("../img/title_backgrounds/handshake.jpg");
+}
+#footer .section-content .lead {
+  color: #86bc25;
+}
+#footer .section-content h1,
+#footer .section-content h2,
+#footer .section-content h3,
+#footer .section-content h4,
+#footer .section-content h5,
+#footer .section-content h6,
+#footer .section-content .h1,
+#footer .section-content .h2,
+#footer .section-content .h3,
+#footer .section-content .h4,
+#footer .section-content .h5,
+#footer .section-content .h6 {
+  color: #86bc25;
+}
+#footer .section-footer {
+  background: #86bc25;
+}
 #get-in-touch-map .google-maps {
   height: 350px;
   width: 100%;
+  margin-bottom: 22px;
 }
 /*
 .parallax {
