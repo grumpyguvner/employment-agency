@@ -50,7 +50,7 @@ function map_init() {
 
     $(".googleMapContainer").show().html('<div id="googlemap" class="google-maps" />');
 
-    maplocation = new google.maps.LatLng(50.79564, 0.05667);
+    maplocation = new google.maps.LatLng(50.79383,0.048482);
     stylers = [{"stylers": [{"saturation": 10 },{"visibility": "on"},{"gamma": 1.51},{"lightness": 1},{"hue": "#7dc1d4"},{"weight": 1.4}]},{
     featureType: "poi.business",
     elementType: "labels",
