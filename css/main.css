@@ -616,7 +616,7 @@ section {
   background-image: url("../img/title_backgrounds/handshake.jpg");
 }
 #about .section-content .lead {
-  color: #0097db;
+  color: #0099d4;
 }
 #about .section-content h1,
 #about .section-content h2,
@@ -630,16 +630,16 @@ section {
 #about .section-content .h4,
 #about .section-content .h5,
 #about .section-content .h6 {
-  color: #0097db;
+  color: #0099d4;
 }
 #about .section-footer {
-  background: #0097db;
+  background: #0099d4;
 }
 #jobseekers .section-head {
   background-image: url("../img/title_backgrounds/handshake.jpg");
 }
 #jobseekers .section-content .lead {
-  color: #0097db;
+  color: #00a0ba;
 }
 #jobseekers .section-content h1,
 #jobseekers .section-content h2,
@@ -653,16 +653,16 @@ section {
 #jobseekers .section-content .h4,
 #jobseekers .section-content .h5,
 #jobseekers .section-content .h6 {
-  color: #0097db;
+  color: #00a0ba;
 }
 #jobseekers .section-footer {
-  background: #0097db;
+  background: #00a0ba;
 }
 #employers .section-head {
   background-image: url("../img/title_backgrounds/handshake.jpg");
 }
 #employers .section-content .lead {
-  color: #0097db;
+  color: #00a79b;
 }
 #employers .section-content h1,
 #employers .section-content h2,
@@ -676,16 +676,16 @@ section {
 #employers .section-content .h4,
 #employers .section-content .h5,
 #employers .section-content .h6 {
-  color: #0097db;
+  color: #00a79b;
 }
 #employers .section-footer {
-  background: #0097db;
+  background: #00a79b;
 }
 #jobsearch .section-head {
   background-image: url("../img/title_backgrounds/handshake.jpg");
 }
 #jobsearch .section-content .lead {
-  color: #0097db;
+  color: #3cac83;
 }
 #jobsearch .section-content h1,
 #jobsearch .section-content h2,
@@ -699,10 +699,10 @@ section {
 #jobsearch .section-content .h4,
 #jobsearch .section-content .h5,
 #jobsearch .section-content .h6 {
-  color: #0097db;
+  color: #3cac83;
 }
 #jobsearch .section-footer {
-  background: #0097db;
+  background: #3cac83;
 }
 #contact .section-head {
   background-image: url("../img/title_backgrounds/handshake.jpg");
@@ -711,7 +711,7 @@ section {
   margin-bottom: 110px;
 }
 #contact .section-content .lead {
-  color: #0097db;
+  color: #58b06d;
 }
 #contact .section-content h1,
 #contact .section-content h2,
@@ -725,10 +725,10 @@ section {
 #contact .section-content .h4,
 #contact .section-content .h5,
 #contact .section-content .h6 {
-  color: #0097db;
+  color: #58b06d;
 }
 #contact .section-footer {
-  background: #0097db;
+  background: #58b06d;
 }
 #footer {
   text-align: center;
