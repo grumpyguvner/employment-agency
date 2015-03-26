@@ -51,7 +51,7 @@ ol {
 .lead {
   margin-bottom: 22px;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1.4;
 }
 @media (min-width: 768px) {
