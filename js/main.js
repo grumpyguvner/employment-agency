@@ -38,7 +38,7 @@ $('.navbar-collapse ul li a').click(function () {
 
 skrollr.init({
     forceHeight: false,
-    smoothScrolling: true,
+    smoothScrolling: false,
     mobileCheck: function() {
                 //hack - forces mobile version to be off
                 return false;
