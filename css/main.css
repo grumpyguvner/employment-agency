@@ -100,10 +100,8 @@ ol {
   display: inline-block;
   width: 119px;
 }
-@media (min-width: 768px) {
-  .navbar-nav > li:first-child {
-    display: none;
-  }
+.navbar-nav > li:first-child {
+  display: none;
 }
 @media (min-width: 992px) {
   .navbar .navbar-nav {
@@ -172,6 +170,11 @@ ol {
   .navbar-default .navbar-nav > li > a:hover,
   .navbar-default .navbar-nav > li > a:focus {
     background-color: transparent;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-shrink {
+    position: static !important;
   }
 }
 @media (min-width: 768px) {
