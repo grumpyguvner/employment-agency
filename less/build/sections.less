@@ -20,11 +20,11 @@ section {
         background: #4D4D4D;
         background: rgba(77, 77, 77, .6);
         .container {
-            font-weight: 700;
+            font-weight: 500;
             min-height: 180px;
             line-height: 180px;
             text-align: center;
-            .h1 {
+            h1, .h1 {
                 vertical-align: middle;
                 display: inline-block;
                 font-size: 28px;
@@ -34,7 +34,6 @@ section {
                 text-align: center;
                 margin: 0 auto;
                 width: 80%;
-                font-weight: 700;
             }
         }
 
@@ -280,6 +279,17 @@ section {
     }
     .section-footer {
         background: @brand-color2;
+        
+        img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+            @media (min-width: @screen-lg-min) {
+                width: auto;
+                margin-right: 30px;
+                margin-bottom: 40px;
+            }
+        }
     }
 }
 #jobseekers {

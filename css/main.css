@@ -321,11 +321,12 @@ section {
   background: rgba(77, 77, 77, 0.6);
 }
 .section-head .section-head-inner .container {
-  font-weight: 700;
+  font-weight: 500;
   min-height: 180px;
   line-height: 180px;
   text-align: center;
 }
+.section-head .section-head-inner .container h1,
 .section-head .section-head-inner .container .h1 {
   vertical-align: middle;
   display: inline-block;
@@ -336,7 +337,6 @@ section {
   text-align: center;
   margin: 0 auto;
   width: 80%;
-  font-weight: 700;
 }
 @media (min-width: 768px) {
   .section-head .section-head-inner .container {
@@ -634,6 +634,18 @@ section {
 }
 #about .section-footer {
   background: #0099d4;
+}
+#about .section-footer img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+@media (min-width: 1200px) {
+  #about .section-footer img {
+    width: auto;
+    margin-right: 30px;
+    margin-bottom: 40px;
+  }
 }
 #jobseekers .section-head {
   background-image: url("../img/title_backgrounds/Jobseekers-banner.jpg");
