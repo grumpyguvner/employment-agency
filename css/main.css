@@ -447,6 +447,10 @@ section {
   line-height: 1em;
   margin-bottom: 38px;
 }
+.section-footer .cta {
+  max-width: 236px;
+  margin: 0 auto;
+}
 .section-footer .pull-left {
   margin-right: 20px;
   margin-bottom: 20px;
