@@ -78,6 +78,13 @@ ol {
   display: inline-block;
   vertical-align: text-top;
 }
+label {
+  font-weight: normal;
+  text-align: left !important;
+}
+.help-block {
+  background: #fff;
+}
 @media (min-width: 768px) {
   /*    .navbar-fixed-top {
             -webkit-transition: padding 0.3s;
@@ -685,6 +692,9 @@ section {
 #jobseekers .section-footer {
   background: #00a0ba;
 }
+#jobseekers .btn-default {
+  color: #00a0ba;
+}
 #employers .section-head {
   background-image: url("../img/title_backgrounds/employers-banner.jpg");
 }
@@ -707,6 +717,9 @@ section {
 }
 #employers .section-footer {
   background: #00a79b;
+}
+#employers .btn-default {
+  color: #00a79b;
 }
 #jobsearch .section-head {
   background-image: url("../img/title_backgrounds/jobsearch-banner.jpg");
