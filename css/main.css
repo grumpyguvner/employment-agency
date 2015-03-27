@@ -74,6 +74,10 @@ ol {
   font-weight: 500;
   line-height: 1.4;
 }
+.address span {
+  display: inline-block;
+  vertical-align: text-top;
+}
 @media (min-width: 768px) {
   /*    .navbar-fixed-top {
             -webkit-transition: padding 0.3s;
@@ -791,6 +795,9 @@ section {
   #footer .section-content {
     margin: 63px 0;
   }
+}
+#footer a {
+  display: inline-block;
 }
 #footer .section-footer {
   background: #86bc25;
