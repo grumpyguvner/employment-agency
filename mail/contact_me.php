@@ -17,7 +17,7 @@ $website = $_POST['website'];
 $comment = $_POST['comment'];
 
 // Create the email and send the message
-$to = 'tim.faulkner@totallyboundless.com';
+$to = 'info@sussexemploymentagency.org.uk';
 $email_subject = "Website $type Contact Form:  $name";
 $email_body = "<p>You have received a new message from your website contact form.</p>" . "<p>Here are the details:</p><p>";
 
@@ -60,6 +60,7 @@ if (!$mail->send()) {
     $msg = "Message sent!";
 }
 
+echo $msg;
 
 
 
