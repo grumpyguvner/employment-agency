@@ -1,0 +1,314 @@
+.navbar {
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        &:focus {
+            outline: none;
+            color: @brand-primary;
+        }
+    }
+
+    .navbar-nav {
+        letter-spacing: 1px;
+        li {
+            a:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .navbar-brand {
+        height: auto;
+        .sprite {
+            background-image: url(../img/spritesheet.png);
+            background-repeat: no-repeat;
+            display: block;
+            cursor: pointer;
+            width: auto;
+            margin-top: 3px;
+
+            img {
+                display: none;
+            }
+            .stitches-sprite(-30px, -241px, 257px, 16px);
+
+
+            @media (max-width: 399px), (min-width: @screen-sm-min) and (max-width: @screen-sm-max)
+                {
+                .stitches-sprite(-30px, -165px, 79px, 16px);
+            }
+            /*            
+                    .stitches-sprite(-30px, -241px, 257px, 16px);
+                    .stitches-sprite(-30px, -317px, 125px, 58px);*/
+        }
+    }
+
+
+    .navbar-nav > li {
+
+        @media (min-width: @screen-lg-min)
+            {
+            margin-left: 15px;
+        }
+
+        &:first-child {
+            @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max)
+                {
+                display: none;
+            }
+            @media (min-width: @screen-sm-min)
+                {
+                margin-left:0;
+            }
+        }
+    }
+}
+
+.navbar-default {
+    .navbar-toggle {
+        .transition(margin .5s);
+        &:hover,
+            &:focus {
+            .icon-bar {
+                background-color: #fff;
+            }
+        }
+    }
+    @media (min-width: @screen-sm-min)
+        {
+        .navbar-nav {
+            > li > a {
+                &:hover,
+                    &:focus {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+.navbar-fixed-top {
+    .navbar-toggle {
+        .transition(margin .5s);
+    }
+    .transition(padding .5s);
+    .navbar-brand {
+        .sprite {
+            .transition(height .5s);
+        }
+    }       
+    .navbar-nav {
+    .transition(padding .5s);
+    }
+}
+.navbar-big {
+    @media (min-width: @screen-md-min)
+            {
+        padding-top: 20px;
+        padding-bottom: 20px;
+            }
+    @media (min-width: @screen-md-min)
+            {
+        padding-top: 26px;
+        padding-bottom: 26px;
+            }
+    .navbar-header {
+        .navbar-toggle {
+        margin-top: 29px;
+        margin-bottom: 29px;
+        }
+    }
+    .navbar-brand {
+        .sprite {
+            .stitches-sprite(-30px, -317px, 125px, 58px);
+
+
+        @media (min-width: @screen-md-min)
+            {
+                .stitches-sprite(-30px, -30px, 161px, 75px);
+        }
+        }
+
+
+    }
+    .navbar-nav {
+        @media (min-width: @screen-sm-min)
+            {
+                padding-top: 18px;
+                bottom-top: 18px;
+            }
+        @media (min-width: @screen-md-min)
+            {
+                padding-top: 27px;
+                padding-bottom: 27px;
+            }
+    }
+
+
+}
+
+
+/*.navbar {
+
+    .navbar-brand {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: auto;
+        .sprite {
+            background-image: url(../img/spritesheet.png);
+            background-repeat: no-repeat;
+            display: inline-block;
+            cursor: pointer;
+           
+            img {
+                display: none;
+            }
+            
+            .stitches-sprite(-5px, -116px, 125px, 58px);
+        }
+    }
+}
+    .navbar-nav > li:first-child {
+        display: none;
+    }
+
+@media (min-width: @screen-md-min)
+{
+    .navbar .navbar-nav {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .navbar-nav > li {
+        margin-left: 15px;
+    }
+
+    .navbar {
+        .navbar-brand {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            position: relative;
+            .sprite {
+                .stitches-sprite(-5px, -5px, 161px, 75px);
+            }
+        }
+    }
+
+}
+@media (min-width: @screen-lg-min)
+{
+
+    .navbar-nav > li:first-child {
+        margin-left:0;
+        display: block;
+    }
+
+}
+
+
+.navbar-default,
+.navbar-inverse {
+    border: none;
+}
+
+.navbar-default {
+    border-bottom: 1px solid @navbar-default-border;
+    .navbar-nav {
+        > li > a {
+            color: @brand-color1;
+
+            &:hover,
+                &:focus {
+                color: @navbar-default-link-hover-color;
+                background-color: @navbar-default-link-hover-bg;
+            }
+        }
+        > .active > a {
+            &,
+            &:hover,
+                &:focus {
+                color: @navbar-default-link-active-color;
+                background-color: @navbar-default-link-active-bg;
+            }
+        }
+        > .disabled > a {
+            &,
+            &:hover,
+                &:focus {
+                color: @navbar-default-link-disabled-color;
+                background-color: @navbar-default-link-disabled-bg;
+            }
+        }
+    }
+
+    @media (min-width: 768px)
+        {
+        .navbar-nav {
+            > li > a {
+                &:hover,
+                    &:focus {
+
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: @screen-xs-max)
+{
+    .navbar-shrink {
+        position: static !important;
+
+    }
+}
+@media (min-width: @screen-sm-min)
+{
+    .navbar-fixed-top {
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        .navbar-brand {
+            -webkit-transition: left 0.3s;
+            -moz-transition: left 0.3s;
+            transition: left 0.3s;
+        }        
+    }
+    .navbar-shrink {
+        min-height: 53px;
+        .navbar-brand {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            line-height: 22px;
+            height: auto;
+            width: 75px;
+            overflow: hidden;
+            .sprite {
+                .stitches-sprite(-176px, -5px, 79px, 16px);
+            }
+            
+        }
+        .navbar-nav {
+            padding-top: 0;
+            padding-bottom: 0;
+            > li > a {
+                padding-top: 15px;
+                padding-bottom: 15px;
+
+            }
+        }
+
+
+    }
+}
+@media (min-width: @screen-md-min)
+{
+    .navbar-shrink {
+        .navbar-brand {
+            width: auto;
+            .sprite {
+                .stitches-sprite(-5px, -90px, 257px, 16px);
+            }
+        }
+    }
+}*/

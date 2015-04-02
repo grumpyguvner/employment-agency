@@ -1,0 +1,10 @@
+application/config/*
+application/files/cache/*
+application/files/tmp/*
+application/files/*
+/concrete/*
+
+!sitemap.xml
+!.htaccess
+!index.html
+/node_modules/

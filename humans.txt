@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+    
+    Rebecca Waters (@beckie_waters) - Design
+    Tim Faulkner (@ants4t) - Developer
+
+# THANKS
+
+
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery
