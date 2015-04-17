@@ -7,4 +7,4 @@ application/files/*
 !sitemap.xml
 !.htaccess
 !index.html
-/node_modules/
+*/node_modules/*
