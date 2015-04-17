@@ -1,2 +1,2 @@
-Borrowed Space
-Bootstrap template bespoke for Borrowed Space 2015
+Sussex Employment Agency
+Bootstrap template bespoke for Sussex Employment Agency 2015, designed by Rebecca Waters and built by Tim Faulkner of Totally Boundless

@@ -20,24 +20,25 @@ if (is_object($c)) {
         <div class="collapse navbar-collapse" id="menu_toggle">
             <ul class="nav navbar-nav navbar-right">
                 <li class="page-scroll">
-                    <a href="/">Home</a>
+                    <a href="#page-top">Home</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="/#about">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="/#jobseekers">Job Seekers</a>
+                    <a href="#jobseekers">Job Seekers</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="/#employers">Employers</a>
+                    <a href="#employers">Employers</a>
                 </li>
-                         <li class="page-scroll">
-                              <a href="/#jobsearch">Job Search</a>
+                           <li class="page-scroll">
+                              <a href="#jobsearch">Job Search</a>
                           </li>
                 <li class="page-scroll">
-                    <a href="/#contact">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+

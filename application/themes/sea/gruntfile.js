@@ -75,6 +75,7 @@ module.exports = function (grunt) {
                 files: {
                     'assets/css/bootstrap.css': ['src/less/bootstrap.less'],
                     'assets/css/main.css': ['src/less/main.less'],
+                    'assets/css/c5.css': ['src/less/c5.less'],
                     'assets/css/font-awesome.css': ['src/less/font-awesome.less']
                 }
             }
