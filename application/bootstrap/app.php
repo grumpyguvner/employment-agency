@@ -69,3 +69,7 @@ $al->register(
   'javascript', 'bootstrap/scrollspy', '../application/themes/sea/src/vendor/bootstrap/js/scrollspy.js',
  array('version' => '3.3.4', 'position' => Asset::ASSET_POSITION_FOOTER, 'minify' => true, 'combine' => true)
 );
+$al->register(
+  'javascript', 'bootstrap/collapse', '../application/themes/sea/src/vendor/bootstrap/js/collapse.js',
+ array('version' => '3.3.4', 'position' => Asset::ASSET_POSITION_FOOTER, 'minify' => true, 'combine' => true)
+);
