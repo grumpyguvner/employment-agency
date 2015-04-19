@@ -43,6 +43,17 @@ if (is_object($cp) && $cp->canViewToolbar()) {
                 document.querySelector('head').appendChild(msViewportStyle)
             }
         </script>
+        <?php
+        
+if ($c->isEditMode()) { 
+    ?>
+        <style type="text/css">
+            .section-content {min-height: 325px;}
+            body {margin-top:0!important;padding-top:49px !important}
+        </style>
+    <?php
+}
+        ?>
     </head>
     <body id="page-top" class="home">
         <script src="<?php echo  $view->getThemePath() ?>/assets/js/modernizr-custom.min.js" async="async"></script>

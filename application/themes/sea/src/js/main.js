@@ -27,8 +27,8 @@ $('body').scrollspy({
     offset: 75
 })
 
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function () {
+// Closes the Responsive Menu on Menu Item Click on Home Page
+$('.home .navbar-collapse ul li a').click(function () {
     $('.navbar-toggle:visible').click();
 });
 

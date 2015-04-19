@@ -518,13 +518,6 @@ section {
   color: #fff;
   padding: 60px 0 50px;
 }
-.section-footer.overlap {
-  padding-top: 0;
-}
-.section-footer.overlap .row {
-  position: relative;
-  margin-top: -85px;
-}
 .section-footer h1,
 .section-footer h2,
 .section-footer h3,
@@ -983,6 +976,9 @@ section {
     text-align: right;
     margin-top: 22px;
   }
+}
+img.img-overlap {
+  margin-top: -50%;
 }
 /*
 .parallax {
