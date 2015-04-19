@@ -64,6 +64,12 @@
  * ----------------------------------------------------------------------------
  */
 
+use \Concrete\Core\Asset\Asset;
+use \Concrete\Core\Asset\AssetList;
+AssetList::getInstance()
+    ->getAsset('javascript', 'bootstrap/transition')
+     ->setAssetURL('../application/themes/sea/src/vendor/bootstrap/js/transition.js');
+ 
 $al = AssetList::getInstance();
 $al->register(
   'javascript', 'bootstrap/scrollspy', '../application/themes/sea/src/vendor/bootstrap/js/scrollspy.js',

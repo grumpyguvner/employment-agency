@@ -8,6 +8,7 @@ if (isset($cp) && $cp->canViewToolbar()) {
 }
 ?>
 <?php Loader::element('footer_required'); ?>
+<script type="text/javascript" src="<?php echo $view->getThemePath() ?>/assets/js/vendor/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php echo $view->getThemePath() ?>/assets/js/plugins-concat.min.js"></script>
 <script type="text/javascript" src="<?php echo $view->getThemePath() ?>/assets/js/main.min.js"></script>
 <script type="text/javascript" src="<?php echo $view->getThemePath() ?>/assets/js/contact_me.min.js"></script>
