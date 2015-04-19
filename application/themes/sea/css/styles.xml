@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<styles version="1.0">
+    <set name="Site">
+        <style name="Site Logo Sprite" variable="logo-sprite" type="image" />
+    </set>
+    <set name="Section Colors">
+        <style name="Main Color" variable="default-main" type="color" />
+        <style name="About Main Color" variable="about-main" type="color" />
+        <style name="Jobseekers Main Color" variable="jobseekers-main" type="color" />
+        <style name="Employers Main Color" variable="employers-main" type="color" />
+        <style name="Main Color" variable="jobs-main" type="color" />
+        <style name="Contact Main Color" variable="contact-main" type="color" />
+        <style name="Footer Main Color" variable="footer-main" type="color" />
+    </set>
+    <set name="Home Background Image">
+        <style name="Main Background Image" variable="home-background" type="image" />
+        <style name="About Header Image" variable="about-background" type="image" />
+        <style name="Jobseekers Header Image" variable="jobseekers-background" type="image" />
+        <style name="Employers Header Image" variable="employers-background" type="image" />
+        <style name="Header Image" variable="jobs-background" type="image" />
+        <style name="Contact Header Image" variable="contact-background" type="image" />
+        <style name="Footer Header Image" variable="footer-background" type="image" />
+    </set>
+    <set name="Jobs Categories">
+        <style name="Admin Header Image" variable="jobs-admin-header-background" type="image" />
+        <style name="Care Header Image" variable="jobs-care-header-background" type="image" />
+        <style name="Call Centre Header Image" variable="jobs-callcentre-header-background" type="image" />
+        <style name="Hospitality Header Image" variable="jobs-hospitality-header-background" type="image" />
+        <style name="Catering Header Image" variable="jobs-catering-header-background" type="image" />
+        <style name="Industrial Header Image" variable="jobs-industrial-header-background" type="image" />
+        <style name="Sales Header Image" variable="jobs-sales-header-background" type="image" />
+        <style name="IT Header Image" variable="jobs-it-header-background" type="image" />
+        <style name="Media Header Image" variable="jobs-media-header-background" type="image" />
+        <style name="Recruitment Header Image" variable="jobs-recruitment-header-background" type="image" />
+        <style name="Estate Agency Header Image" variable="jobs-estateagency-header-background" type="image" />
+        <style name="Engineering Header Image" variable="jobs-engineering-header-background" type="image" />
+        <style name="Facilities Management Header Image" variable="jobs-facilities-header-background" type="image" />
+        <style name="Construction Header Image" variable="jobs-construction-header-background" type="image" />
+    </set>
+</styles>

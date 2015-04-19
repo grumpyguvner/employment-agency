@@ -8,14 +8,11 @@ class PageTheme extends Theme
     
     public function registerAssets()
     {
-        
-        $this->providesAsset('css', 'bootstrap/*');
         $this->providesAsset('css', 'blocks/form');
         $this->providesAsset('css', 'core/frontend/*');
-        $this->providesAsset('javascript', 'jquery');
+        $this->requireAsset('javascript', 'jquery');
+        $this->requireAsset('javascript', 'bootstrap/scrollspy');
     }
-    
-    
     
     public function getThemeBlockClasses()
     {

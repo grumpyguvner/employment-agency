@@ -20,22 +20,11 @@ $this->inc('elements/header.php'); ?>
                             <p class="reference">Ref: 148</h2>
                         </div>
                     </div>
-                    <div class="row">
-                        
-                        <div class="col-md-4">
-                            <h2>THEM:</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam nulla vitae dolor auctor, in gravida ante lacinia. Integer elementum mauris a augue finibus aliquam. Nam sed ex euismod augue aliquam ultricies ut id elit. Aenean finibus vulputate risus, fringilla luctus tortor lobortis et.</p>
-                        </div>
-                        <div class="col-md-4">
-                            <h2>THE JOB:</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam nulla vitae dolor auctor, in gravida ante lacinia. Integer elementum mauris a augue finibus aliquam. Nam sed ex euismod augue aliquam ultricies ut id elit. Aenean finibus vulputate risus, fringilla luctus tortor lobortis et.</p>
-                            <p>In ac quam vel tortor mattis faucibus. In blandit pellentesque mi eget sodales. Nulla eu turpis nisl. Nullam elit lorem, dapibus aliquet odio quis, molestie ultricies orci. Suspendisse potenti. Sed dictum tellus auctor odio tristique, eu dignissim arcu tincidunt. Nulla facilisi.</p>
-                        </div>
-                        <div class="col-md-4">
-                            <h2>YOUR BACKGROUND:</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam nulla vitae dolor auctor, in gravida ante lacinia. Integer elementum mauris a augue finibus aliquam. Nam sed ex euismod augue aliquam ultricies ut id elit. Aenean finibus vulputate risus, fringilla luctus tortor lobortis et.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam nulla vitae dolor auctor, in gravida ante lacinia. Integer elementum mauris a augue finibus aliquam. Nam sed ex euismod augue aliquam ultricies ut id elit. Aenean finibus vulputate risus, fringilla luctus tortor lobortis et.</p>
-                        </div>
-                    </div>
+                    <?php
+                    $a = new Area('Job Description');
+                    $a->setAreaGridMaximumColumns(12);
+                    $a->display($c);
+                    ?>
                 </div>
             </div>
             <footer class="section-footer">

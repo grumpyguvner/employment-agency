@@ -20,7 +20,7 @@
     .navbar-brand {
         height: auto;
         .sprite {
-            background-image: url(../img/spritesheet.png);
+            background-image: url(@logo-sprite-image);
             background-repeat: no-repeat;
             display: block;
             cursor: pointer;
@@ -214,7 +214,7 @@
     border-bottom: 1px solid @navbar-default-border;
     .navbar-nav {
         > li > a {
-            color: @brand-color1;
+            color: @default-main-color;
 
             &:hover,
                 &:focus {

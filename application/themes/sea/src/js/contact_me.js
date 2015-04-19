@@ -12,7 +12,7 @@ $(function() {
     
     var options = { 
         type:      'post',
-        url: '/mail/contact_me.php',
+        url: '/application/themes/sea/mail/contact_me.php',
         clearForm: true,
         success:       showResponse
     }; 

@@ -8,7 +8,9 @@ if (isset($cp) && $cp->canViewToolbar()) {
 }
 ?>
 <?php Loader::element('footer_required'); ?>
-<!-- jQuery -->
+<script type="text/javascript" src="<?php echo $view->getThemePath() ?>/assets/js/plugins-concat.min.js"></script>
+<script type="text/javascript" src="<?php echo $view->getThemePath() ?>/assets/js/main.min.js"></script>
+<script type="text/javascript" src="<?php echo $view->getThemePath() ?>/assets/js/contact_me.min.js"></script>
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",

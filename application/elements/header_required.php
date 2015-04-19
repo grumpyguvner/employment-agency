@@ -74,15 +74,18 @@ if($c->getCollectionAttributeValue('exclude_search_index')) { ?>
     <meta name="robots" content="noindex" />
 <?php } ?>
 <?php
-if (Config::get('concrete.misc.app_version_display_in_header')) {
-    echo '<meta name="generator" content="concrete5 - ' . APP_VERSION . '" />';
-}
-else {
-    echo '<meta name="generator" content="concrete5" />';
-}
+//if (Config::get('concrete.misc.app_version_display_in_header')) {
+//    echo '<meta name="generator" content="concrete5 - ' . APP_VERSION . '" />';
+//}
+//else {
+//    echo '<meta name="generator" content="concrete5" />';
+//}
 ?>
 
-<?php $u = new User(); ?>
+<?php $u = new User();
+if (is_object($cp) && $cp->canViewToolbar())
+{
+?>
 <script type="text/javascript">
 <?php
 	echo("var CCM_DISPATCHER_FILENAME = '" . DIR_REL . '/' . DISPATCHER_FILENAME . "';\r");
@@ -101,7 +104,9 @@ var CCM_REL = "<?php echo DIR_REL?>";
 
 </script>
 
-<?php if (is_object($scc)) { ?>
+<?php 
+}
+if (is_object($scc)) { ?>
     <style type="text/css">
         <?php print $scc->getValue();?>
     </style>

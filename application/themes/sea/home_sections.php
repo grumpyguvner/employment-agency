@@ -1,379 +1,324 @@
 <?php
 defined('C5_EXECUTE') or die("Access Denied.");
-$this->inc('elements/header_home.php'); ?>
-
-
-        <header id="index">
-            <div class="section-head">
-                <div class="section-head-inner">
-                    <div class="container">
-                        <span class="h1">LOCAL JOBS FOR LOCAL PEOPLE</span><br/>
-                        Specialist Recruitment For Sussex
-                    </div>
+$this->inc('elements/header_home.php');
+?>
+<header id="index">
+    <div class="section-head">
+        <div class="section-head-inner">
+            <div class="container">
+                <?php
+                $a = new Area('Lead Header');
+                $a->setAreaGridMaximumColumns(1);
+                $a->setBlockLimit(1);
+                $a->display($c);
+                ?>
+            </div>
+        </div>
+    </div>
+    <div class="section-footer">
+        <div class="container">
+            <?php
+            $a = new Area('Lead Section Content');
+            $a->setAreaGridMaximumColumns(12);
+            $a->display($c);
+            ?>
+        </div>
+    </div>
+</header>
+<section id="about">
+    <header class="section-head" data-bottom-top="background-position: 50% 75%" data-top-bottom="background-position: 50% 27%" data-target="#about .section-head">
+        <div class="section-head-inner">
+            <div class="container">
+                <?php
+                $a = new Area('About Section Header');
+                $a->setAreaGridMaximumColumns(1);
+                $a->setBlockLimit(1);
+                $a->display($c);
+                ?>
+            </div>
+        </div>
+    </header>
+    <div class="section-content">
+        <div class="container">
+            <?php
+            $a = new Area('About Section Content');
+            $a->setAreaGridMaximumColumns(12);
+            $a->display($c);
+            ?>
+        </div>
+    </div>
+    <footer class="section-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-push-6">
+                    <?php
+                    $a = new Area('About Footer Title');
+                    $a->setAreaGridMaximumColumns(1);
+                    $a->setBlockLimit(1);
+                    $a->display($c);
+                    ?>
+                </div>
+                <div class="col-sm-6 col-sm-pull-6">
+                    <?php
+                    $a = new Area('About Footer Content');
+                    $a->setAreaGridMaximumColumns(6);
+                    $a->display($c);
+                    ?>
                 </div>
             </div>
-            <div class="section-footer overlap">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="cta">
-                                <img src="<?php echo  $view->getThemePath() ?>/assets/img/photos/cta-1.jpg" alt="" class="img-responsive img-circle img-centered" width="170" height="170">
-                                <h2>OUR SUCCESS IS YOUR 
-                                    SUCCESS</h2>
-                                <p>We will satisfy your 
-                                    requirements better, faster and more cost effectively than any other supplier</p>
+        </div>
+    </footer>
+</section>
+<section id="jobseekers">
+    <header class="section-head" data-bottom-top="background-position: 50% 75%" data-top-bottom="background-position: 50% 27%" data-target="#jobseekers .section-head">
+        <div class="section-head-inner">
+            <div class="container">
+                <?php
+                $a = new Area('Jobseekers Section Header');
+                $a->setAreaGridMaximumColumns(1);
+                $a->setBlockLimit(1);
+                $a->display($c);
+                ?>
+            </div>
+        </div>
+    </header>
+    <div class="section-content">
+        <div class="container">
+            <?php
+            $a = new Area('Jobseekers Section Content');
+            $a->setAreaGridMaximumColumns(12);
+            $a->display($c);
+            ?>
+        </div>
+    </div>
+    <footer class="section-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-push-6">
+                    <?php
+                    $a = new Area('Jobseekers Footer Title');
+                    $a->setAreaGridMaximumColumns(1);
+                    $a->setBlockLimit(1);
+                    $a->display($c);
+                    ?>
+                </div>
+                <div class="col-sm-6 col-sm-pull-6">
+                    <form class="form-horizontal" role="form" novalidate enctype="multipart/form-data">
+                        <div class="control-group form-group">
+                            <label class="control-label col-sm-4 col-md-3 col-lg-2" for="jobseekersName">Name</label>
+                            <div class="controls col-sm-8 col-md-9 col-lg-10">
+                                <input type="text" name="name" class="form-control" id="jobseekersName" placeholder="Full name" required data-validation-required-message="Please enter your full name.">
+                                <span class="help-block"></span>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="cta">
-                                <img src="<?php echo  $view->getThemePath() ?>/assets/img/photos/cta-2.jpg" alt="" class="img-responsive img-circle img-centered" width="170" height="170">
-                                <h2>CORPORATE SOCIAL 
-                                    RESPONSIBILITY</h2>
-
-                                <p>As a social enterprise, all 
-                                    profits generated are 
-                                    re-invested in community based charity projects </p>
+                        <div class="control-group form-group">
+                            <label class="control-label  col-sm-4 col-md-3 col-lg-2" for="jobseekersEmail">E-mail</label>
+                            <div class="controls col-sm-8 col-md-9 col-lg-10">
+                                <input type="email" name="email" class="form-control" id="jobseekersEmail" placeholder="E-mail Address" required required data-validation-required-message="Please enter your email address.">
+                                <span class="help-block"></span>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="cta">
-
-                                <img src="<?php echo  $view->getThemePath() ?>/assets/img/photos/cta-3.jpg" alt="" class="img-responsive img-circle img-centered" width="170" height="170">
-                                <h2>STRIVING FOR THAT EXTRA MILE</h2>
-                                <p>It isn’t just about finding the right candidate, we pride 
-                                    ourselves on matching 
-                                    individuals and organisations with shared values </p>
-                            </div> 
-                        </div> 
-                    </div>
-                </div>
-            </div>
-        </header>
-        <section id="about">
-            <header class="section-head" data-bottom-top="background-position: 50% 75%" data-top-bottom="background-position: 50% 27%" data-target="#about .section-head">
-                <div class="section-head-inner">
-                    <div class="container">
-                        <span class="h1">OUR SERVICE COMMITMENT</span>
-                    </div>
-                </div>
-            </header>
-            <div class="section-content">
-                <div class="container">
-                    <p><span class="lead">Sussex Employment Agency provides permanent staffing solutions from its office in East Sussex.</span></p>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <p>SEA is a people driven business, we believe that only the best can produce the best. We understand that recruiting "the right people for the right job" is vital to our success.</p>
-                            <p>We are constantly introducing innovative ways to improve the quality of our service to ensure that we understand how you work, your business needs and share your vision by working as a partner, not just a supplier.</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <h3>To Our Candidates:</h3>
-                            <ul><li>We listen to what you really want in order to select the right match for you</li>
-                                <li>We provide honest, constructive feedback at all stages of the recruitment process</li>
-                                <li>We offer on-going advice and support even after we find you employment</li></ul>
-
-                            <h3>To Our Clients:</h3>
-                            <ul><li>We offer a transparent recruitment package that reflects your needs</li>
-                                <li>We believe in trust, commitment, value and honesty</li>
-                                <li>We will offer a consultative approach, providing advice and guidance at all times</li></ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <footer class="section-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6 col-sm-push-6"><div class="h1">CORPORATE SOCIAL RESPONSIBILITY</div>
-                        </div>
-                        <div class="col-sm-6 col-sm-pull-6">
-                            <a href="http://sussexcommunity.org.uk/" target="_blank"><img src="<?php echo  $view->getThemePath() ?>/assets/img/scda-white-logo.png" alt="Sussex Community Development Association" class="pull-left"></a>
-                            <abbr title="Sussex Employment Agency" class="initialism"><strong>SEA</strong></abbr> operates as a Social 
-                            Enterprise within <strong>Sussex Community Development Association</strong> which is a Sussex based Charity 
-                            delivering various projects in the local area. All profits generated by SEA are re-invested into the charity’s community based projects and will impact directly on the communities they serve. <a href="http://sussexcommunity.org.uk/" target="_blank">Visit <abbr title="Sussex Community Development Association" class="initialism"><strong>SCDA</strong></abbr> for more information</a>.
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </section>
-        <section id="jobseekers">
-            <header class="section-head" data-bottom-top="background-position: 50% 75%" data-top-bottom="background-position: 50% 27%" data-target="#jobseekers .section-head">
-                <div class="section-head-inner">
-                    <div class="container">
-                        <span class="h1">RE-INVIGORATE YOUR JOB SEARCH</span>
-                    </div>
-                </div>
-            </header>
-            <div class="section-content">
-                <div class="container">
-                    <p><span class="lead">Getting the right job that you are happy with is a full time process. It requires dedication, tenacity and of course the right agency. At Sussex Employment Agency, we seek to find the right role for you, based on your stated criteria.</span></p>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <h2>WHY REGISTER WITH US?</h2>
-                            <p>By registering with us, you benefit from being contacted for appropriate opportunities. Our simple registration process also assists our 
-                                consultants to assess your suitability for any vacancies that we have.</p>
-
-                            <h2>OUR COMMITMENT</h2>
-                            <p>We appreciate you choosing our services to find work, which is why we make the commitment to all candidates registering with us to listen to your requirements, offer advise and aim to find you appropriate opportunities promptly and efficiently. Our objective is to build an honest, long-term relationship with you based on trust and positive communication.</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p>We promise to:</p>
-                            <ul><li>Treat you with respect at all times</li>
-                                <li>Provide a clear understanding of the positions that we can offer you</li>
-                                <li>Explore every avenue available to us in finding you a suitable position within your timescales</li>
-                                <li>Support you at every stage in your search for work</li>
-                                <li>Provide, where possible, worthwhile 
-                                    constructive and honest feedback throughout the recruitment process</li>
-                                <li>Submit your details to employers only with your express permission</li>
-                                <li>Keep in regular contact to ensure that we 
-                                    continue to act in your best interests</li></ul>
-
-                            <p>We hope that our relationship with you will extend further than finding you immediate 
-                                employment, and that our association continues throughout your working life</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <footer class="section-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6 col-sm-push-6"><div class="h1">START YOUR NEW JOB SEARCH TODAY</div>
-                        </div>
-                        <div class="col-sm-6 col-sm-pull-6">
-                            <form class="form-horizontal" role="form" novalidate enctype="multipart/form-data">
-                                <div class="control-group form-group">
-                                    <label class="control-label col-sm-4 col-md-3 col-lg-2" for="jobseekersName">Name</label>
-                                    <div class="controls col-sm-8 col-md-9 col-lg-10">
-                                        <input type="text" name="name" class="form-control" id="jobseekersName" placeholder="Full name" required data-validation-required-message="Please enter your full name.">
-                                        <span class="help-block"></span>
-                                    </div>
-                                </div>
-                                <div class="control-group form-group">
-                                    <label class="control-label  col-sm-4 col-md-3 col-lg-2" for="jobseekersEmail">E-mail</label>
-                                    <div class="controls col-sm-8 col-md-9 col-lg-10">
-                                        <input type="email" name="email" class="form-control" id="jobseekersEmail" placeholder="E-mail Address" required required data-validation-required-message="Please enter your email address.">
-                                        <span class="help-block"></span>
-                                    </div>
-                                </div>
-                                <div class="control-group form-group">
-                                    <label class="control-label  col-sm-4 col-md-3 col-lg-2" for="jobseekersPhone">Phone</label>
-                                    <div class="controls col-sm-8 col-md-9 col-lg-10">
-                                        <input type="text" name="phone" class="form-control" id="jobseekersPhone" placeholder="Telephone Number">
-                                    </div>
-                                </div>
-                                <div class="control-group form-group">
-                                    <label class="control-label  col-sm-4 col-md-3 col-lg-2" for="jobseekersLinkedIn">LinkedIn</label>
-                                    <div class="controls col-sm-8 col-md-9 col-lg-10">
-                                        <input type="text" name="linkedin" class="form-control" id="jobseekersLinkedIn" placeholder="LinkedIn Profile URL">
-                                    </div>
-                                </div>
-                                <div class="control-group form-group">
-                                    <label class="control-label  col-sm-4 col-md-3 col-lg-2" for="jobseekersCV">Add C.V.</label>
-                                    <div class="controls col-sm-8 col-md-9 col-lg-10">
-                                        <input type="file" name="attach" class="form-control" id="jobseekersCV">
-                                    </div>
-                                </div>
-                                <div class="control-group form-group">
-                                    <label class="control-label  col-sm-4 col-md-3 col-lg-2" for="jobseekersComment">Comment</label>
-                                    <div class="controls col-sm-8 col-md-9 col-lg-10">
-                                        <textarea class="form-control" name="comment" id="jobseekersComment" placeholder="Comments" rows="4"></textarea>
-                                    </div>
-                                </div>
-                                <div class="control-group form-group"> 
-                                    <div class="controls col-sm-12 text-right">
-                                        <div class="jobseekersSuccess"></div>
-                                        <button type="submit" class="btn btn-default">Register Now</button>
-                                        <input type="hidden" name="type" value="Jobseeker">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </section>
-        <section id="employers">
-            <header class="section-head" data-bottom-top="background-position: 50% 75%" data-top-bottom="background-position: 50% 27%" data-target="#employers .section-head">
-                <div class="section-head-inner">
-                    <div class="container">
-                        <span class="h1">SHARE YOUR WORLD WITH GREAT CANDIDATES</span>
-                    </div>
-                </div>
-            </header>
-            <div class="section-content">
-                <div class="container">
-
-                    <p><span class="lead">At Sussex Employment Agency we believe that flexibility is the key to excellent client relationships, which is why we adopt an agile approach to finding the right candidates to fit your needs.</span></p>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <h2>WHY WORK WITH SEA?</h2>
-                            <p>We believe that the key to our success is down to the flexible approach that we adopt. We understand that every client is different and it is with this in mind that we tailor recruitment solutions dependent upon our client's needs, rather than a one size fits all approach.</p> 
-                            <p>We never lose sight of the fact that we are a people business, and there is no substitute for the personal touch.</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p>Connecting the right people with the right business goes way beyond 
-                                understanding whats written in a Job Description.</p>
-
-                            <p>Our ability to go beyond the call of duty means that you can feel confident that the position you have within your team will be filled seamlessly. Add to that our commitment to supporting our candidates even after they’ve become 
-                                employed means you can rest assured your business will continue to run smoothly.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <footer class="section-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6 col-sm-push-6"><div class="h1">ATTRACT NEW
-                                CANDIDATES
-                                FAST</div>
-                        </div>
-                        <div class="col-sm-6 col-sm-pull-6">
-                            <form class="form-horizontal" role="form" novalidate enctype="multipart/form-data">
-                                <div class="control-group form-group">
-                                    <label class="control-label col-sm-4 col-md-3 col-lg-2" for="employersCompany">Company</label>
-                                    <div class="controls col-sm-8 col-md-9 col-lg-10">
-                                        <input type="text" name="company" class="form-control" id="employersCompany" placeholder="Company Name" required data-validation-required-message="Please enter your company name.">
-                                    </div>
-                                </div>
-                                <div class="control-group form-group">
-                                    <label class="control-group control-label col-sm-4 col-md-3 col-lg-2" for="employersName">Name</label>
-                                    <div class="controls col-sm-8 col-md-9 col-lg-10">
-                                        <input type="text" name="name" class="form-control" id="employersName" placeholder="Contact Persons Name" required data-validation-required-message="Please enter contact persons name.">
-                                    </div>
-                                </div>
-                                <div class="control-group form-group">
-                                    <label class="control-label  col-sm-4 col-md-3 col-lg-2" for="employersEmail">E-mail</label>
-                                    <div class="controls col-sm-8 col-md-9 col-lg-10">
-                                        <input type="email" name="email" class="form-control" id="employersEmail" placeholder="Contact E-mail Address" required data-validation-required-message="Please enter a contact email address.">
-                                    </div>
-                                </div>
-                                <div class="control-group form-group">
-                                    <label class="control-label  col-sm-4 col-md-3 col-lg-2" for="employersPhone">Phone</label>
-                                    <div class="controls col-sm-8 col-md-9 col-lg-10">
-                                        <input type="text" name="phone" class="form-control" id="employersPhone" placeholder="Contact Telephone Number">
-                                    </div>
-                                </div>
-                                <div class="control-group form-group">
-                                    <label class="control-label  col-sm-4 col-md-3 col-lg-2" for="employersWebsite">Website</label>
-                                    <div class="controls col-sm-8 col-md-9 col-lg-10">
-                                        <input type="text" name="website" class="form-control" id="employersWebsite" placeholder="Company Website">
-                                    </div>
-                                </div>
-                                <div class="control-group form-group">
-                                    <label class="control-label  col-sm-4 col-md-3 col-lg-2" for="employersJD">Add Job Description</label>
-                                    <div class="controls col-sm-8 col-md-9 col-lg-10">
-                                        <input type="file" name="attach" class="form-control" id="employersJD">
-                                    </div>
-                                </div>
-                                <div class="control-group form-group">
-                                    <label class="control-label  col-sm-4 col-md-3 col-lg-2" for="employersComment">Comment</label>
-                                    <div class="controls col-sm-8 col-md-9 col-lg-10">
-                                        <textarea class="form-control" name="comment" id="employersComment" placeholder="Comments" rows="4"></textarea>
-                                    </div>
-                                </div>
-                                <div class="control-group form-group"> 
-                                    <div class="controls col-sm-12 text-right">
-                                        <div id="employersSuccess"></div>
-                                        <button type="submit" class="btn btn-default">Register Now</button>
-                                        <input type="hidden" name="type" value="Employer">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </section>
-
-        <!--
--->                <section id="jobsearch">
-                    <header class="section-head" data-bottom-top="background-position: 50% 75%" data-top-bottom="background-position: 50% 27%" data-target="#jobsearch .section-head">
-                        <div class="section-head-inner">
-                            <div class="container">
-                                <span class="h1">Your journey starts here</span>
+                        <div class="control-group form-group">
+                            <label class="control-label  col-sm-4 col-md-3 col-lg-2" for="jobseekersPhone">Phone</label>
+                            <div class="controls col-sm-8 col-md-9 col-lg-10">
+                                <input type="text" name="phone" class="form-control" id="jobseekersPhone" placeholder="Telephone Number">
                             </div>
                         </div>
-                    </header>
-                    <div class="section-content">
-                        <div class="container">
-                            <p><span class="lead">Our list of vacancies is changing all the time, with some of them not even making it to our website. If you don’t see what you are looking for here please get in touch or register your details anyway.</span></p>
-        
-        
-                        </div>
-                    </div>
-                    <footer class="section-footer">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-6 col-sm-push-6"><div class="h1">
-                                        SEARCH ALL 
-                                        OUR LATEST
-                                        VACANCIES</div>
-                                </div>
-                                <div class="col-sm-6 col-sm-pull-6">
-        
-                                </div>
+                        <div class="control-group form-group">
+                            <label class="control-label  col-sm-4 col-md-3 col-lg-2" for="jobseekersLinkedIn">LinkedIn</label>
+                            <div class="controls col-sm-8 col-md-9 col-lg-10">
+                                <input type="text" name="linkedin" class="form-control" id="jobseekersLinkedIn" placeholder="LinkedIn Profile URL">
                             </div>
                         </div>
-                    </footer>
-                </section>
-
-
-        <section id="contact">
-            <header class="section-head" data-bottom-top="background-position: 50% 75%" data-top-bottom="background-position: 50% 27%" data-target="#contact .section-head">
-                <div class="section-head-inner">
-                    <div class="container">
-                        <span class="h1">Say Hello</span>
-                    </div>
-                </div>
-            </header>
-            <div class="section-content">
-                <div class="container">
-                    <p><span class="lead">We try to be available to answer any and all questions as much as possible. If you’d like to discuss vacancies or job hunting, do get in touch</span></p>
-                    <div class="row">
-                        <div class="col-sm-6 col-md-7 col-lg-8">
-                            <div id="get-in-touch-map" class="googleMapContainer"></div>
+                        <div class="control-group form-group">
+                            <label class="control-label  col-sm-4 col-md-3 col-lg-2" for="jobseekersCV">Add C.V.</label>
+                            <div class="controls col-sm-8 col-md-9 col-lg-10">
+                                <input type="file" name="attach" class="form-control" id="jobseekersCV">
+                            </div>
                         </div>
-                        <div class="col-sm-6 col-md-5 col-lg-4">
-                            <h2>DROP US A LINE OR VISIT OUR OFFICE</h2>
-
-                            <p>Phone:	01273 519 109<br />
-                                E-mail: 	<a href="mailto:info@sussexemploymentagency.org.uk">info@sussexemploymentagency.org.uk</a></p>
-                            <p class="address">
-                                <span>Address:</span>&nbsp;<span>31A High Street<br >
-                                    Newhaven<br >
-                                    East Sussex<br >
-                                    BN9 9PD</span></p>
+                        <div class="control-group form-group">
+                            <label class="control-label  col-sm-4 col-md-3 col-lg-2" for="jobseekersComment">Comment</label>
+                            <div class="controls col-sm-8 col-md-9 col-lg-10">
+                                <textarea class="form-control" name="comment" id="jobseekersComment" placeholder="Comments" rows="4"></textarea>
+                            </div>
                         </div>
-                    </div>
+                        <div class="control-group form-group"> 
+                            <div class="controls col-sm-12 text-right">
+                                <div class="jobseekersSuccess"></div>
+                                <button type="submit" class="btn btn-default">Register Now</button>
+                                <input type="hidden" name="type" value="Jobseeker">
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <footer class="section-footer overlap">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <p><img src="<?php echo  $view->getThemePath() ?>/assets/img/photos/marcus.jpg" alt="" class="img-responsive img-circle img-centered" width="170" height="170"></p>
-                            <h2>MARCUS TOWNSEND CertRP</h2>
-                            <p>Marcus is an experienced Recruiter with a wealth of knowledge mainly gained whilst working for a leading International Recruitment Organisation based in the City of London. He has specialised in Facilities Management, Estate Agency, Landscape Architecture, Engineering, Sales/Business Development, Corporate Reception and has had exposure to several other industry sectors.</p>
-
-                            <p>Focused on providing the highest level of customer service to both employers and job seekers, Marcus is adaptable to provide the service that best suits your needs.</p>
-
-                            <p>E-mail: <a href="mailto:marcus@sussexemploymentagency.org.uk">marcus@sussexemploymentagency.org.uk</a><br>
-                                Phone: 01273 519109</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p><img src="<?php echo  $view->getThemePath() ?>/assets/img/photos/james.jpg" alt="" class="img-responsive img-circle img-centered" width="170" height="170"></p>
-                            <h2>JAMES MORGAN</h2>
-                            <p>James is a Resourcer/Trainee Recruitment Consultant with previous experience in Sales, Customer Service and Telemarketing. He brings with him lots of enthusiasm, excellent communication skills and a determination to succeed.</p>
-
-                            <p>He is proud to have joined SEA from its inception and alongside Marcus, plans to be part of a very successful team that make a positive impact on the local recruitment market and are able to generate profits for SCDA Charity for investment in the local community.</p>
-
-                            <p>Marcus says “James is very important to the success of SEA and I am pleased to work alongside him.  I am confident that with his help, SEA will grow from strength to strength, building itself a reputation for offering a high level, personal recruitment service supporting the community”</p>
-
-                            <p>E-mail: <a href="mailto:james@sussexemploymentagency.org.uk">james@sussexemploymentagency.org.uk</a><br> 
-                                Phone: 	01273 519109</p>
-                        </div>
-                    </div>
+        </div>
+    </footer>
+</section>
+<section id="employers">
+    <header class="section-head" data-bottom-top="background-position: 50% 75%" data-top-bottom="background-position: 50% 27%" data-target="#employers .section-head">
+        <div class="section-head-inner">
+            <div class="container">
+                <?php
+                $a = new Area('Employers Section Header');
+                $a->setAreaGridMaximumColumns(1);
+                $a->setBlockLimit(1);
+                $a->display($c);
+                ?>
+            </div>
+        </div>
+    </header>
+    <div class="section-content">
+        <div class="container">
+            <?php
+            $a = new Area('Employers Section Content');
+            $a->setAreaGridMaximumColumns(12);
+            $a->display($c);
+            ?>
+        </div>
+    </div>
+    <footer class="section-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-push-6">
+                    <?php
+                    $a = new Area('Employers Footer Title');
+                    $a->setAreaGridMaximumColumns(1);
+                $a->setBlockLimit(1);
+                    $a->display($c);
+                    ?>
                 </div>
-            </footer>
-        </section>
+                <div class="col-sm-6 col-sm-pull-6">
+                    <form class="form-horizontal" role="form" novalidate enctype="multipart/form-data">
+                        <div class="control-group form-group">
+                            <label class="control-label col-sm-4 col-md-3 col-lg-2" for="employersCompany">Company</label>
+                            <div class="controls col-sm-8 col-md-9 col-lg-10">
+                                <input type="text" name="company" class="form-control" id="employersCompany" placeholder="Company Name" required data-validation-required-message="Please enter your company name.">
+                            </div>
+                        </div>
+                        <div class="control-group form-group">
+                            <label class="control-group control-label col-sm-4 col-md-3 col-lg-2" for="employersName">Name</label>
+                            <div class="controls col-sm-8 col-md-9 col-lg-10">
+                                <input type="text" name="name" class="form-control" id="employersName" placeholder="Contact Persons Name" required data-validation-required-message="Please enter contact persons name.">
+                            </div>
+                        </div>
+                        <div class="control-group form-group">
+                            <label class="control-label  col-sm-4 col-md-3 col-lg-2" for="employersEmail">E-mail</label>
+                            <div class="controls col-sm-8 col-md-9 col-lg-10">
+                                <input type="email" name="email" class="form-control" id="employersEmail" placeholder="Contact E-mail Address" required data-validation-required-message="Please enter a contact email address.">
+                            </div>
+                        </div>
+                        <div class="control-group form-group">
+                            <label class="control-label  col-sm-4 col-md-3 col-lg-2" for="employersPhone">Phone</label>
+                            <div class="controls col-sm-8 col-md-9 col-lg-10">
+                                <input type="text" name="phone" class="form-control" id="employersPhone" placeholder="Contact Telephone Number">
+                            </div>
+                        </div>
+                        <div class="control-group form-group">
+                            <label class="control-label  col-sm-4 col-md-3 col-lg-2" for="employersWebsite">Website</label>
+                            <div class="controls col-sm-8 col-md-9 col-lg-10">
+                                <input type="text" name="website" class="form-control" id="employersWebsite" placeholder="Company Website">
+                            </div>
+                        </div>
+                        <div class="control-group form-group">
+                            <label class="control-label  col-sm-4 col-md-3 col-lg-2" for="employersJD">Add Job Description</label>
+                            <div class="controls col-sm-8 col-md-9 col-lg-10">
+                                <input type="file" name="attach" class="form-control" id="employersJD">
+                            </div>
+                        </div>
+                        <div class="control-group form-group">
+                            <label class="control-label  col-sm-4 col-md-3 col-lg-2" for="employersComment">Comment</label>
+                            <div class="controls col-sm-8 col-md-9 col-lg-10">
+                                <textarea class="form-control" name="comment" id="employersComment" placeholder="Comments" rows="4"></textarea>
+                            </div>
+                        </div>
+                        <div class="control-group form-group"> 
+                            <div class="controls col-sm-12 text-right">
+                                <div id="employersSuccess"></div>
+                                <button type="submit" class="btn btn-default">Register Now</button>
+                                <input type="hidden" name="type" value="Employer">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>     
+<section id="jobsearch">
+    <header class="section-head" data-bottom-top="background-position: 50% 75%" data-top-bottom="background-position: 50% 27%" data-target="#jobsearch .section-head">
+        <div class="section-head-inner">
+            <div class="container">
+                <?php
+                $a = new Area('Jobsearch Section Header');
+                $a->setAreaGridMaximumColumns(1);
+                $a->setBlockLimit(1);
+                $a->display($c);
+                ?>
+            </div>
+        </div>
+    </header>
+    <div class="section-content">
+        <div class="container">
+            <?php
+            $a = new Area('Jobsearch Section Content');
+            $a->setAreaGridMaximumColumns(12);
+            $a->display($c);
+            ?>
+        </div>
+    </div>
+    <footer class="section-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-push-6">
+                    <?php
+                    $a = new Area('Jobsearch Footer Title');
+                    $a->setAreaGridMaximumColumns(1);
+                    $a->setBlockLimit(1);
+                    $a->display($c);
+                    ?>
+                </div>
+                <div class="col-sm-6 col-sm-pull-6">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
 
 
-<?php  $this->inc('elements/footer.php'); ?>
+<section id="contact">
+    <header class="section-head" data-bottom-top="background-position: 50% 75%" data-top-bottom="background-position: 50% 27%" data-target="#contact .section-head">
+        <div class="section-head-inner">
+            <div class="container">
+                <?php
+                $a = new Area('Contact Section Header');
+                $a->setAreaGridMaximumColumns(1);
+                $a->setBlockLimit(1);
+                $a->display($c);
+                ?>
+            </div>
+        </div>
+    </header>
+    <div class="section-content">
+        <div class="container">
+            <?php
+            $a = new Area('Contact Section Content');
+            $a->setAreaGridMaximumColumns(12);
+            $a->display($c);
+            ?>
+        </div>
+    </div>
+    <footer class="section-footer">
+        <div class="container">
+            <?php
+            $a = new Area('Contact Footer Content');
+            $a->setAreaGridMaximumColumns(12);
+            $a->display($c);
+            ?>
+        </div>
+    </footer>
+</section>
+
+
+<?php $this->inc('elements/footer.php'); ?>

@@ -78,7 +78,7 @@ body {
     border-bottom: 1px solid @navbar-default-border;
     .navbar-nav {
         > li > a {
-            color: @brand-color1;
+            color: @default-main-color;
 
             &:hover,
                 &:focus {
