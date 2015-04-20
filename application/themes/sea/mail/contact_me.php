@@ -8,6 +8,7 @@ if (empty($_POST['type'])) {
 require_once('class.phpmailer.php');
 
 $type = $_POST['type'];
+$reference = $_POST['reference'];
 $company = $_POST['company'];
 $name = $_POST['name'];
 $email_address = $_POST['email'];
@@ -23,6 +24,10 @@ $email_body = "<p>You have received a new message from your website contact form
 
 if (!empty($company))
     $email_body .= "Company: $company<br>";
+if (!empty($reference)) {
+    $email_body .= "Job Reference: $reference<br>";
+    $email_subject .= "; Ref:  $reference";
+}
 if (!empty($name))
     $email_body .= "Name: $name<br>";
 if (!empty($email_address))
