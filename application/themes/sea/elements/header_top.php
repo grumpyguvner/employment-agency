@@ -29,7 +29,7 @@ if (is_object($cp) && $cp->canViewToolbar()) {
     if (isset($this->akk)) $params['akk'] = $this->akk;
     Loader::element('header_required', $params);
     ?>        
-        <link href="<?php echo $view->getThemePath() ?>/assets/css/fontello/fontello.min.css" rel="stylesheet" type="text/css" media="all">
+        <link href="<?php echo $view->getThemePath() ?>/assets/css/fontello/fontello.css" rel="stylesheet" type="text/css" media="all">
         <!--[if IE 7]><link rel="stylesheet" href="<?php echo  $view->getThemePath() ?>/assets/css/fontello/fontello-ie7.min.css"><![endif]-->
         <script>
             if (navigator.userAgent.match(/IEMobile\/10\.0/)) {

@@ -1009,6 +1009,101 @@ section {
 .sector-head-jobs-facilities-management {
   background-image: url(../img/title_backgrounds/facilities.jpg);
 }
+.job-search-latest-header h2 {
+  text-align: center;
+  margin-bottom: 22px;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+#jobsearch .job-search-box {
+  postion: relative;
+  border: 1px solid #666;
+  margin-bottom: 30px;
+}
+#jobsearch .job-search-box .jobsector {
+  position: relative;
+  background-color: #000;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+#jobsearch .job-search-box .jobsector .jobsector-inner {
+  background: #4D4D4D;
+  background: rgba(77, 77, 77, 0.6);
+  font-weight: 500;
+  min-height: 180px;
+  line-height: 180px;
+  text-align: center;
+}
+#jobsearch .job-search-box .jobsector .jobsector-inner h1,
+#jobsearch .job-search-box .jobsector .jobsector-inner .h1 {
+  vertical-align: middle;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  font-size: 30px;
+}
+@media (min-width: 768px) {
+  #jobsearch .job-search-box .jobsector .jobsector-inner {
+    min-height: 180px;
+    line-height: 180px;
+  }
+}
+@media (min-width: 992px) {
+  #jobsearch .job-search-box .jobsector .jobsector-inner {
+    min-height: 180px;
+    line-height: 180px;
+  }
+}
+#jobsearch .job-search-box .jobdetail {
+  padding: 20px 20px 15px;
+}
+#jobsearch .job-search-box .jobdetail:before,
+#jobsearch .job-search-box .jobdetail:after {
+  content: " ";
+  display: table;
+}
+#jobsearch .job-search-box .jobdetail:after {
+  clear: both;
+}
+#jobsearch .job-search-box .jobdetail p {
+  margin-bottom: 5px;
+}
+#jobsearch .job-search-box .jobdetail .jobmeta {
+  margin-bottom: 22px;
+  color: #3cac83;
+  font-size: 18px;
+  font-weight: 500;
+}
+#jobsearch .job-search-box .jobdetail .jobmeta a {
+  text-decoration: none;
+}
+#jobsearch .job-search-box .jobdetail .jobmeta .jobsalary {
+  font-size: 16px;
+  font-weight: 300;
+}
+#jobsearch .job-search-box .jobdetail .jobref {
+  float: left;
+  margin-bottom: 0;
+  padding-top: 20px;
+  color: #3cac83;
+  font-weight: 300;
+}
+#jobsearch .job-search-box .jobdetail .joblink {
+  float: right;
+  margin-right: -20px;
+}
+#jobsearch .job-search-box .jobdetail .joblink a {
+  color: #3cac83;
+  font-size: 45px;
+  line-height: 12px;
+}
 img.img-overlap {
   margin-bottom: 20px;
 }
