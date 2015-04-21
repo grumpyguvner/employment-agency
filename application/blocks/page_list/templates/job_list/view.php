@@ -24,9 +24,9 @@ $c = Page::getCurrentPage();
                 $description = $controller->truncateSummaries ? $th->wordSafeShortText($description, $controller->truncateChars) : $description;
                 $description = $th->entities($description);
 
-                $reference = $c->getAttribute('job_reference');
-                $salary = $c->getAttribute('job_salary');
-                $sector = $c->getAttribute('job_sector');
+                $reference = $page->getAttribute('job_reference');
+                $salary = $page->getAttribute('job_salary');
+                $sector = $page->getAttribute('job_sector');
                 $sector_safe = preg_replace('%\s+%', '-', strtolower($sector));
                 ?>
                 <div class="col-sm-6 col-md-4">
