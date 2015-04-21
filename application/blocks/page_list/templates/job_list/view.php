@@ -5,7 +5,7 @@ $c = Page::getCurrentPage();
 ?>
 <div class="job-search-latest">
     <?php if ($pageListTitle): ?>
-        <div class="ccm-block-page-list-header">
+        <div class="job-search-latest-header">
             <h2><?php echo $pageListTitle ?></h2>
         </div>
     <?php endif; ?>
