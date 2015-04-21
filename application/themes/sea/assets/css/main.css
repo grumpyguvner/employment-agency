@@ -741,9 +741,6 @@ section {
 #index .section-footer .col-sm-4 {
   margin-bottom: 45px;
 }
-#index .section-footer .col-sm-4 .img-centered {
-  margin-bottom: 36px;
-}
 #index .section-footer .col-sm-4 h2 {
   margin-bottom: 28px;
 }
@@ -977,8 +974,49 @@ section {
     margin-top: 22px;
   }
 }
+.sector-head-jobs-administration,
+.sector-head-jobs-secretarial {
+  background-image: url(../img/title_backgrounds/admin-secretarial.jpg);
+}
+.sector-head-jobs-care {
+  background-image: url(../img/title_backgrounds/care.jpg);
+}
+.sector-head-jobs-hospitality {
+  background-image: url(../img/title_backgrounds/hospitality.jpg);
+}
+.sector-head-jobs-catering {
+  background-image: url(../img/title_backgrounds/catering.jpg);
+}
+.sector-head-jobs-industrial {
+  background-image: url(../img/title_backgrounds/industrial-factory.jpg);
+}
+.sector-head-jobs-sales,
+.sector-head-jobs-business-development {
+  background-image: url(../img/title_backgrounds/sales-business-development.jpg);
+}
+.sector-head-jobs-it {
+  background-image: url(../img/title_backgrounds/it.jpg);
+}
+.sector-head-jobs-media {
+  background-image: url(../img/title_backgrounds/media.jpg);
+}
+.sector-head-jobs-recruitment {
+  background-image: url(../img/title_backgrounds/recruitment.jpg);
+}
+.sector-head-jobs-estate-agency {
+  background-image: url(../img/title_backgrounds/estate-agent.jpg);
+}
+.sector-head-jobs-facilities-management {
+  background-image: url(../img/title_backgrounds/facilities.jpg);
+}
 img.img-overlap {
-  margin-top: -50%;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  img.img-overlap {
+    margin-bottom: 36px;
+    margin-top: -160px;
+  }
 }
 /*
 .parallax {

@@ -1,17 +1,17 @@
 #jobdescription {
-    
+
     .job-details {
         font-size: @font-size-h2;
         color: @default-main-color;
         font-weight: 500;
-        
-        
+
+
         .reference {
-            
-@media(min-width:768px) {
-    text-align: right;
-    margin-top: @line-height-computed;
-}
+
+            @media(min-width:768px) {
+                text-align: right;
+                margin-top: @line-height-computed;
+            }
         }
     }
 }
@@ -50,4 +50,85 @@
 }
 .sector-head-jobs-facilities-management {
     background-image: url(../img/title_backgrounds/facilities.jpg);
+}
+#jobsearch {
+    .job-search-box {
+        postion: relative;
+        border: 1px solid #666;
+            margin-bottom: 30px;
+
+        .jobsector {
+            position: relative;
+            background-color: #000;
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-position: center center;
+            .jobsector-inner {
+                background: #4D4D4D;
+                background: rgba(77, 77, 77, .6);
+                font-weight: 500;
+                min-height: 180px;
+                line-height: 180px;
+                text-align: center;
+                h1, .h1 {
+                    vertical-align: middle;
+                    display: inline-block;
+                    text-transform: uppercase;
+                    color: #fff;
+                    text-align: center;
+                    margin: 0 auto;
+                    width: 90%;
+                    font-size: 30px;
+                }
+
+
+                @media (min-width: @screen-sm-min) {
+
+                    min-height: 180px;
+                    line-height: 180px;
+                }
+                @media (min-width: @screen-md-min)
+                    {
+                    min-height: 180px;
+                    line-height: 180px;
+                }
+            }
+        }
+        .jobdetail {
+            padding: 20px 20px 15px;
+            .clearfix();
+            p {
+                margin-bottom: 5px;
+            }
+            .jobmeta {
+                margin-bottom: 22px;
+                color: @jobs-main-color;
+                font-size: 18px;
+                font-weight: 500;
+                .jobsalary {
+                font-size: 16px;
+                    font-weight: 300;
+                }
+            }
+            .jobref {
+                float: left;
+                margin-bottom: 0;
+                padding-top: 20px;
+                color: @jobs-main-color;
+                    font-weight: 300;
+            }
+            .joblink {
+                float: right;
+                margin-right: -20px;
+                a {
+                    color: @jobs-main-color;
+                    font-size: 45px;
+                    line-height: 12px;
+                }
+            }
+        }
+    }
 }

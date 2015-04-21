@@ -74,9 +74,9 @@ $sector_safe = preg_replace('%\s+%', '-', strtolower($sector));
                             </div>
                         </div>
                         <div class="control-group form-group">
-                            <label class="control-label  col-sm-4 col-md-3 col-lg-2" for="jobseekersComment">Comment</label>
+                            <label class="control-label  col-sm-4 col-md-3 col-lg-2" for="jobseekersComment">Cover Letter</label>
                             <div class="controls col-sm-8 col-md-9 col-lg-10">
-                                <textarea class="form-control" name="comment" id="jobseekersComment" placeholder="Comments" rows="4"></textarea>
+                                <textarea class="form-control" name="comment" id="jobseekersComment" placeholder="This is an opportunity for you to explain why you are applying for this role." rows="4"></textarea>
                             </div>
                         </div>
                         <div class="control-group form-group"> 

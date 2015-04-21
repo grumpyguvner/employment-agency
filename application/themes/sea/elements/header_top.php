@@ -19,7 +19,6 @@ if (is_object($cp) && $cp->canViewToolbar()) {
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="<?php echo Localization::activeLanguage()?>"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="<?php echo Localization::activeLanguage()?>"> <!--<![endif]-->
     <head>
-        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link href="<?php echo $view->getThemePath() ?>/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">

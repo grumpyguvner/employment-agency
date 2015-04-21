@@ -32,6 +32,16 @@ $(function() {
         $(this).ajaxSubmit(myoptions); 
         ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Registration', eventLabel: 'Jobseeker Registration Form'});
     }); 
+ 
+    $('#jobdescription form').submit(function(e) {
+        e.preventDefault();
+        myoptions = options;
+        myoptions.target = '#jobdescriptionSuccess';
+        $(this).ajaxSubmit(myoptions); 
+        ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Registration', eventLabel: 'Job Description Apply Form'});
+    }); 
+    
+    
     
 });
  
