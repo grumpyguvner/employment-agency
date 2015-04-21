@@ -34,12 +34,12 @@ $sector_safe = preg_replace('%\s+%', '-', strtolower($sector));
             ?>
         </div>
     </div>
-    <footer class="section-footer">
+    <footer id="jobdescriptionForm" class="section-footer">
         <div class="container"><div class="row">
                 <div class="col-sm-6 col-sm-push-6"><div class="h1">APPLY FOR THIS JOB NOW</div>
                 </div>
                 <div class="col-sm-6 col-sm-pull-6">
-                    <form class="form-horizontal" role="form" novalidate enctype="multipart/form-data">
+                    <form id="jobdescriptionForm" class="form-horizontal" role="form" novalidate enctype="multipart/form-data">
                         <input type="hidden" name="reference" class="form-control" id="jobseekersReference" value="<?php echo t($reference); ?>">
                         <div class="control-group form-group">
                             <label class="control-label col-sm-4 col-md-3 col-lg-2" for="jobseekersName">Name</label>
