@@ -26,10 +26,10 @@ if (is_object($c)) {
                     <a href="#about">About</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#jobseekers">Job Seekers</a>
+                    <a href="#employers">Employers</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#employers">Employers</a>
+                    <a href="#jobseekers">Job Seekers</a>
                 </li>
                            <li class="page-scroll">
                               <a href="#jobsearch">Job Search</a>

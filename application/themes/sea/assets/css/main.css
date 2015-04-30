@@ -791,7 +791,7 @@ section {
   background-image: url("../img/title_backgrounds/Jobseekers-banner.jpg");
 }
 #jobseekers .section-content .lead {
-  color: #00a0ba;
+  color: #00a79b;
 }
 #jobseekers .section-content h1,
 #jobseekers .section-content h2,
@@ -805,19 +805,19 @@ section {
 #jobseekers .section-content .h4,
 #jobseekers .section-content .h5,
 #jobseekers .section-content .h6 {
-  color: #00a0ba;
+  color: #00a79b;
 }
 #jobseekers .section-footer {
-  background: #00a0ba;
+  background: #00a79b;
 }
 #jobseekers .btn-default {
-  color: #00a0ba;
+  color: #00a79b;
 }
 #employers .section-head {
   background-image: url("../img/title_backgrounds/employers-banner.jpg");
 }
 #employers .section-content .lead {
-  color: #00a79b;
+  color: #00a0ba;
 }
 #employers .section-content h1,
 #employers .section-content h2,
@@ -831,13 +831,13 @@ section {
 #employers .section-content .h4,
 #employers .section-content .h5,
 #employers .section-content .h6 {
-  color: #00a79b;
+  color: #00a0ba;
 }
 #employers .section-footer {
-  background: #00a79b;
+  background: #00a0ba;
 }
 #employers .btn-default {
-  color: #00a79b;
+  color: #00a0ba;
 }
 #jobsearch .section-head {
   background-image: url("../img/title_backgrounds/jobsearch-banner.jpg");
