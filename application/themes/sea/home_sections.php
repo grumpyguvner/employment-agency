@@ -269,19 +269,12 @@ $this->inc('elements/header_home.php');
     </div>
     <footer class="section-footer">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-sm-push-6">
-                    <?php
-                    $a = new Area('Jobsearch Footer Title');
-                    $a->setAreaGridMaximumColumns(1);
-                    $a->setBlockLimit(1);
-                    $a->display($c);
-                    ?>
-                </div>
-                <div class="col-sm-6 col-sm-pull-6">
-
-                </div>
-            </div>
+            <?php
+            $a = new Area('Jobsearch Footer');
+            $a->setAreaGridMaximumColumns(1);
+            $a->setBlockLimit(1);
+            $a->display($c);
+            ?>
         </div>
     </footer>
 </section>

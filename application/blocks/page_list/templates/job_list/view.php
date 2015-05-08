@@ -14,7 +14,10 @@ $c = Page::getCurrentPage();
         <div class="row">
 
             <?php
-            foreach ($pages as $page) {
+            foreach ($pages as $i => $page) {
+                
+                if ($i > 0 && $i % 3 == 0) echo '<div class="hidden-xs hidden-sm clearfix"></div>';
+                if ($i > 0 && $i % 2 == 0) echo '<div class="visible-sm clearfix"></div>';
                 $title = $th->entities($page->getCollectionName());
                 $url = $nh->getLinkToCollection($page);
                 $target = ($page->getCollectionPointerExternalLink() != '' && $page->openCollectionPointerExternalLinkInNewWindow()) ? '_blank' : $page->getAttribute('nav_target');
