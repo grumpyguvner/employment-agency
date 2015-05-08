@@ -8,7 +8,7 @@ use \Concrete\Core\Block\BlockController;
 use Page;
 use Core;
 
-class Controller extends \Concrete\Block\Search
+class Controller extends Concrete\Block\Search
 {
     
     public function do_search()
