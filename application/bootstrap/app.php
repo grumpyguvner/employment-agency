@@ -68,14 +68,14 @@ use \Concrete\Core\Asset\Asset;
 use \Concrete\Core\Asset\AssetList;
 AssetList::getInstance()
     ->getAsset('javascript', 'bootstrap/transition')
-     ->setAssetURL('../application/themes/sea/src/vendor/bootstrap/js/transition.js');
+     ->setAssetURL('/application/themes/sea/src/vendor/bootstrap/js/transition.js');
  
 $al = AssetList::getInstance();
 $al->register(
-  'javascript', 'bootstrap/scrollspy', '../application/themes/sea/src/vendor/bootstrap/js/scrollspy.js',
+  'javascript', 'bootstrap/scrollspy', '/application/themes/sea/src/vendor/bootstrap/js/scrollspy.js',
  array('version' => '3.3.4', 'position' => Asset::ASSET_POSITION_FOOTER, 'minify' => true, 'combine' => true)
 );
 $al->register(
-  'javascript', 'bootstrap/collapse', '../application/themes/sea/src/vendor/bootstrap/js/collapse.js',
+  'javascript', 'bootstrap/collapse', '/application/themes/sea/src/vendor/bootstrap/js/collapse.js',
  array('version' => '3.3.4', 'position' => Asset::ASSET_POSITION_FOOTER, 'minify' => true, 'combine' => true)
 );

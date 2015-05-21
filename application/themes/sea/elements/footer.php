@@ -41,7 +41,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
 <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
 <div class="scroll-top page-scroll visible-xs visble-sm">
     <a class="btn btn-primary" href="#page-top">
-        <i class="icon-up-open"></i>
+        <i class="icon-up"></i>
     </a>
 </div>
 <?php $this->inc('elements/footer_bottom.php');?>

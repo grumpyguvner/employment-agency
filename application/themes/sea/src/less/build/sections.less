@@ -1,9 +1,4 @@
-.navbar + #index .section-head-inner {
-    padding-top: 90px;
-    @media (min-width: @screen-md-min) {
-        padding-top: 160px;
-    }
-}
+
 section {
     background: #fff;
     overflow: hidden;
@@ -327,10 +322,28 @@ section {
             
             color: @jobs-main-color;
         }
+        
     }
     .section-footer {
         background: @jobs-main-color;
     }
+    
+    
+        
+        .seperator {
+            border-bottom: 2px solid #fff;
+            height: 15px;
+            margin: 20px 0 35px;
+            overflow: display;
+            text-align: center;
+            span {
+                position: relative;
+                background: @jobs-main-color;
+                color: #fff;
+                font-size: 45px;
+                top: -15px;
+            }
+        }
 }
 #contact {
     .section-head {

@@ -38,7 +38,7 @@ $c = Page::getCurrentPage();
                         <div class="jobdetail">
                             <p class="jobmeta"><a href="<?php echo $url ?>" target="<?php echo $target ?>" title="<?php echo $title; ?> job description"><?php echo $title; ?></a><br>
                                 <span class="jobsalary"><?php echo t($salary); ?></span></p>
-                            <p><?php echo $description; ?></p>
+                            <p class="details"><?php echo $description; ?></p>
                             <p class="jobref">Ref: <?php echo t($reference); ?></p>
                             <div class="joblink"><a href="<?php echo $url ?>" target="<?php echo $target ?>" title="<?php echo $title; ?> job description"><i class="icon-angle-double-right"></i></a></div></div>
                     </div>

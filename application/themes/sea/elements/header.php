@@ -6,7 +6,7 @@ if (is_object($c)) {
 }
 ?>
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-big<?php if (is_object($cp) && !$cp->canViewToolbar()) echo ' navbar-fixed-top';?> navbar-big">
+<nav class="navbar navbar-default<?php if (is_object($cp) && !$cp->canViewToolbar()) echo ' navbar-fixed-top';?> navbar-big">
     <div class="container">
         <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu_toggle">
@@ -15,7 +15,7 @@ if (is_object($c)) {
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#page-top"><i class="sprite" title="Sussex Employment Agency"><img src="<?php echo  $view->getThemePath() ?>/assets/img/sussex-employment-agency-logo.png" alt="Sussex Employment Agency" height="161" width="75" ></i></a>
+            <a class="navbar-brand" href="/"><i class="sprite" title="Sussex Employment Agency"><img src="<?php echo  $view->getThemePath() ?>/assets/img/sussex-employment-agency-logo.png" alt="Sussex Employment Agency" height="161" width="75" ></i></a>
         </div>
         <div class="collapse navbar-collapse" id="menu_toggle">
             <ul class="nav navbar-nav navbar-right">
@@ -31,9 +31,9 @@ if (is_object($c)) {
                 <li class="page-scroll">
                     <a href="/#jobseekers">Job Seekers</a>
                 </li>
-                         <li class="page-scroll">
-                              <a href="/#jobsearch">Job Search</a>
-                          </li>
+                <li class="page-scroll <?php if ($active == 'jobsearch') echo ' active';?>">
+                     <a href="/#jobsearch">Job Search</a>
+                 </li>
                 <li class="page-scroll">
                     <a href="/#contact">Contact</a>
                 </li>
@@ -41,3 +41,4 @@ if (is_object($c)) {
         </div>
     </div>
 </nav>
+<div class="navbarspacer"></div>

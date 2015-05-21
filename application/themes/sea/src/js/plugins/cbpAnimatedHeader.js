@@ -13,9 +13,11 @@ var cbpAnimatedHeader = (function() {
 	var docElem = document.documentElement,
 		header = $('.navbar-fixed-top'),
 		didScroll = false,
-		changeHeaderOn = 110;
+		changeHeaderOn = 110,
+		hideUpOn = 300;
 
 	function init() {
+                $('.scroll-top a').hide();
 		window.addEventListener( 'scroll', function( event ) {
 			if( !didScroll ) {
 				didScroll = true;
@@ -33,6 +35,15 @@ var cbpAnimatedHeader = (function() {
 		else {
 			header.addClass('navbar-big');
 		}
+                
+                
+		if (sy >= hideUpOn ) {
+			$('.scroll-top a').fadeIn( "slow");
+		}
+		else {
+			$('.scroll-top a').fadeOut( "slow");
+		}
+                
 		didScroll = false;
 	}
 

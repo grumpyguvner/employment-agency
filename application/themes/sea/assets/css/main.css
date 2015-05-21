@@ -86,6 +86,9 @@ label {
 .help-block {
   color: #fff;
 }
+.navbar {
+  background-color: rgba(255, 255, 255, 0.95);
+}
 .navbar a {
   text-decoration: none;
   font-weight: bold;
@@ -95,6 +98,7 @@ label {
   color: #0097db;
 }
 .navbar .navbar-nav {
+  margin: 0;
   letter-spacing: 1px;
 }
 .navbar .navbar-nav li a:focus {
@@ -161,6 +165,9 @@ label {
   -webkit-transition: padding 0.5s;
   -o-transition: padding 0.5s;
   transition: padding 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 .navbar-fixed-top .navbar-toggle {
   -webkit-transition: margin 0.5s;
@@ -177,16 +184,13 @@ label {
   -o-transition: padding 0.5s;
   transition: padding 0.5s;
 }
-@media (min-width: 992px) {
-  .navbar-big {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
+.navbar-big {
+  background-color: #ffffff;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .navbar-big {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 .navbar-big .navbar-header .navbar-toggle {
@@ -215,6 +219,22 @@ label {
   .navbar-big .navbar-nav {
     padding-top: 27px;
     padding-bottom: 27px;
+  }
+}
+.navbarspacer + header .section-head-inner,
+.navbarspacer + section .section-head-inner {
+  padding-top: 90px;
+}
+@media (min-width: 992px) {
+  .navbarspacer + header .section-head-inner,
+  .navbarspacer + section .section-head-inner {
+    padding-top: 107px;
+  }
+}
+@media (min-width: 1200px) {
+  .navbarspacer + header .section-head-inner,
+  .navbarspacer + section .section-head-inner {
+    padding-top: 137px;
   }
 }
 /*.navbar {
@@ -438,29 +458,22 @@ footer .footer-below {
   position: fixed;
   right: 2%;
   bottom: 2%;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   z-index: 1000;
 }
 .scroll-top .btn {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 100%;
-  font-size: 28px;
+  font-size: 27px;
   line-height: 40px;
   text-align: center;
   padding: 0;
+  color: #fff;
 }
 .scroll-top .btn:focus {
   outline: none;
-}
-.navbar + #index .section-head-inner {
-  padding-top: 90px;
-}
-@media (min-width: 992px) {
-  .navbar + #index .section-head-inner {
-    padding-top: 160px;
-  }
 }
 section {
   background: #fff;
@@ -1018,7 +1031,9 @@ section {
 #jobsearch .job-search-box {
   postion: relative;
   border: 1px solid #666;
+  background: #fff;
   margin-bottom: 30px;
+  color: #4d4d4d;
 }
 #jobsearch .job-search-box .jobsector {
   position: relative;

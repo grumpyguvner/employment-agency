@@ -48,7 +48,6 @@ if ($c->isEditMode()) {
     ?>
         <style type="text/css">
             .section-content {min-height: 325px;}
-            body {margin-top:0!important;padding-top:49px !important}
         </style>
     <?php
 }

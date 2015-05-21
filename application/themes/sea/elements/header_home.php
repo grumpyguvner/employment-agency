@@ -6,7 +6,7 @@ if (is_object($c)) {
 }
 ?>
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-big<?php if (is_object($cp) && !$cp->canViewToolbar()) echo ' navbar-fixed-top';?> navbar-big">
+<nav class="navbar navbar-default<?php if (is_object($cp) && !$cp->canViewToolbar()) echo ' navbar-fixed-top';?> navbar-big">
     <div class="container">
         <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu_toggle">
@@ -41,4 +41,5 @@ if (is_object($c)) {
         </div>
     </div>
 </nav>
+<div class="navbarspacer"></div>
 

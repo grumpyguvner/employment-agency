@@ -1,5 +1,7 @@
 <?php
 defined('C5_EXECUTE') or die("Access Denied.");
+$active = 'jobsearch';
+
 $this->inc('elements/header.php');
 
 $name = $c->getCollectionName();
@@ -7,6 +9,7 @@ $reference = $c->getAttribute('job_reference');
 $salary = $c->getAttribute('job_salary');
 $sector = $c->getAttribute('job_sector');
 $sector_safe = preg_replace('%\s+%', '-', strtolower($sector));
+
 ?>
 <section id="jobdescription">
     <header class="section-head sector-head-jobs sector-head-jobs-<?php echo $sector_safe; ?>" data-bottom-top="background-position: 50% 75%" data-top-bottom="background-position: 50% 27%">

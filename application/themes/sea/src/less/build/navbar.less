@@ -1,4 +1,7 @@
 .navbar {
+    
+    background-color: rgba(255,255,255,.95);
+    
     a {
         text-decoration: none;
         font-weight: bold;
@@ -9,6 +12,7 @@
     }
 
     .navbar-nav {
+        margin: 0;
         letter-spacing: 1px;
         li {
             a:focus {
@@ -100,17 +104,15 @@
     .navbar-nav {
     .transition(padding .5s);
     }
+    .transition(background-color .5s);
 }
 .navbar-big {
-    @media (min-width: @screen-md-min)
+    background-color: @navbar-default-bg;
+    
+    @media (min-width: @screen-lg-min)
             {
-        padding-top: 20px;
-        padding-bottom: 20px;
-            }
-    @media (min-width: @screen-md-min)
-            {
-        padding-top: 26px;
-        padding-bottom: 26px;
+        padding-top: 15px;
+        padding-bottom: 15px;
             }
     .navbar-header {
         .navbar-toggle {
@@ -146,8 +148,16 @@
 
 
 }
-
-
+.navbarspacer + header .section-head-inner, 
+.navbarspacer + section .section-head-inner {
+    padding-top: 90px;
+    @media (min-width: @screen-md-min) {
+        padding-top: 107px;
+    }
+    @media (min-width: @screen-lg-min) {
+        padding-top: 137px;
+    }
+}
 /*.navbar {
 
     .navbar-brand {
